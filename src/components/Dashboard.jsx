@@ -1,4 +1,4 @@
-import { Activity, Users, TrendingUp, DollarSign, Heart, AlertCircle, CheckCircle, GitBranch } from 'lucide-react'
+import { Activity, Users, TrendingUp, PoundSterling, Heart, AlertCircle, CheckCircle, GitBranch } from 'lucide-react'
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts'
 import {
   icsSummaryData,
@@ -63,7 +63,7 @@ function Dashboard({ lastUpdate }) {
           <KPICard
             title="Benefits Accessed"
             value={formatCurrency(icsSummaryData.financial.benefitsAccessed)}
-            icon={<DollarSign className="w-6 h-6" />}
+            icon={<PoundSterling className="w-6 h-6" />}
             trend={`ROI: ${icsSummaryData.financial.roi.toFixed(1)}:1`}
             color="bg-fe-green/10 text-fe-green"
             iconBg="bg-fe-green/20"
